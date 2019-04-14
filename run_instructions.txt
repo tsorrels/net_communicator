@@ -1,0 +1,11 @@
+make
+sudo insmod netcom.ko 
+sudo chmod /dev/net/com 777
+
+
+
+sudo rmmod netcom
+
+
+
+tail -f /var/log/syslog
